@@ -1,4 +1,10 @@
-# BookMonkey
+<<<<<<< HEAD
+# BookMonkey2
+Sample Angular project
+
+Original taken from https://github.com/angular-buch/book-monkey2/tree/ng6.
+
+The Project is release under MIT License
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
