@@ -10,9 +10,12 @@
       "prefix": "bm",
       "schematics": {
         "@schematics/angular:component": {
-          "inlineStyle": true
+          "inlineTemplate": true,
+          "inlineStyle": true,
+          "styleext": "css"
         }
       },
+
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -27,7 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/semantic-ui-css/semantic.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -111,6 +114,7 @@
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
+
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
