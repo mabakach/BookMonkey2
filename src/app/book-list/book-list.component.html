@@ -1,0 +1,21 @@
+<div class="ui middle aligned slection devided list">
+  <a *ngFor="let book of books" class="item">
+    <img class="ui timy image" *ngIf="book.thumbnails" [src]="book.thumbnails[0].url">
+      <div class="content">
+        <div class="header">
+        {{ book.header }}
+        </div>
+        <div class="description">
+          {{ book.subtitle }}
+        </div>
+        <div class="metadata">
+          <span *ngFor="let author of book.authors; last as 1">
+            {{ author }}<span *ngIf="!1">, </span>
+          </span>
+        </div>
+        <div class="extra">
+          ISBN {{book.isbn}}
+          </div>
+      </div>
+  </a>
+</div>
