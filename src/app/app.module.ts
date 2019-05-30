@@ -1,3 +1,4 @@
+import { BookStoreService } from './shared/book-store.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,7 +17,9 @@ import { BookDetailsComponent } from './book-details/book-details.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    BookStoreService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
