@@ -1,4 +1,4 @@
 <div class="ui middle aligned slection devided list">
-  <a class="bm-book-list-item item" *ngFor="let book of books" [book]="book" (click)="showDetails(book)">
+  <a class="bm-book-list-item item" *ngFor="let book of books" [book]="book" [routerLink]="book.isbn">
   </a>
 </div>
