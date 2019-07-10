@@ -11,9 +11,7 @@ import { Book, Thumbnail } from '../shared/book';
 export class BookListComponent implements OnInit {
   books: Book[];
 
-  constructor(private bookStoreService: BookStoreService) {
-
-  }
+  constructor(private bookStoreService: BookStoreService) {}
 
   ngOnInit() {
     this.bookStoreService.getAll().subscribe(res => this.books = res);
